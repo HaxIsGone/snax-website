@@ -28,6 +28,7 @@ body {
 header {
     background: #111;
     border-bottom: 1px solid var(--border);
+    text-align: center;
 }
 
 .top-banner {
@@ -112,4 +113,19 @@ footer {
 
 .social img:hover {
     transform: scale(1.15);
+}
+/* ---------- BANNER FADE IN ---------- */
+.hero {
+    height: 400px;
+    background-image: url('assets/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0; /* start invisible */
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
